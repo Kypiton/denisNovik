@@ -201,6 +201,13 @@ li a {
   color: #828282;
 }
 
+@media screen and (max-width: 840px) {
+  .skills .last__program {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}
+
 @media screen and (max-width: 628px) {
   .skills .program {
     margin: 0 auto;
