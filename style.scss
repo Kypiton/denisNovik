@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Arvo', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+li {
+    list-style-type: none;
+
+    a { 
+        text-decoration: none;
+        color: #828282;
+        font-size: 18px;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+    .active {
+        color: #070707;
+        font-weight: bold;
+    }
+
+    .black__item {
+        color: #070707;
+    }
+}
+
+.solid__line {
+    border: 1px solid #828282;
+}
+
+.pre__header {
+    .info__denis {
+        margin-top: 2.5rem;
+    }
+
+    .grey__item {
+        color: #828282;
+    }
+
+    .language {
+        transform: rotate(-90deg);
+
+        a {
+            text-decoration: none;  
+        }
+    }
+
+    .denis {
+        width: 100%;
+    }
+
+    .denis_mobile {
+        display: none;
+    }
+}
+
+.aboutme {
+    background-color: #f6f6f6;
+
+    .container {
+        padding: 120px 0 107px 0;
+        margin-top: 100px;
+    }
+
+    h2 {
+        // margin-top: 120px;
+        font-size: 34px;
+        line-height: 42px;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+
+.skills {
+    h2 {
+        margin-top: 90px;
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .skills__p {
+        margin-top: 70px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .flex {
+        margin-top: 80px;
+        flex-wrap: wrap;
+    }
+
+    .program {
+        text-align: center;
+
+        .stars {
+            margin-top: 40px;
+        }
+
+        .program__p {
+            margin-top: 25px;
+        }
+    }
+}
+
+.portfolio {
+    background-color: #f6f6f6;
+
+    .container {
+        padding: 113px 0 50px 0;
+    }
+
+    h2 {
+        font-size: 34px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    a {
+        display: block;
+        color: #070707;
+        text-align: center;
+        margin: 45px 0 100px 0;
+    }
+}
+
+.footer {
+    .container {
+        padding: 114px 0 123px 0;
+    }
+
+    h2 {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .footer__p__1 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        color: #fff;
+        background-color: #000;
+        border-radius: 20px;
+        margin-top: 30px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+
+    .flex {
+        justify-content: center;
+
+        img {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+
+    .footer__p__2 {
+        text-align: center;
+        margin-top: 25px;
+        color: #828282;
+    }
+}
+
+@media screen and (max-width: 628px) {
+    .skills {
+        .program {
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #flex__container,
+    .solid__line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 418px) {
+    .skills {
+        .program {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .language {
+        display: none;
+    }
+
+    .pre__header {
+        .flex {
+            flex-direction: column;
+            justify-content: none;
+            align-items: flex-start;
+        }
+
+        .denis {
+            display: none;
+        }
+
+        .denis_mobile {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
+    .footer {
+        .flex {
+            img {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .footer {
+        .flex {
+            img {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    }
+}
